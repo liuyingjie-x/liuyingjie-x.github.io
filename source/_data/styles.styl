@@ -1,0 +1,25 @@
+// Custom styles.
+// 为文章添加阴影效果
+.post {
+   margin-top: 60px;
+   margin-bottom: 60px;
+   padding: 25px;
+   -webkit-box-shadow: 0 0 5px rgba(500, 203, 203, .5);
+   -moz-box-shadow: 0 0 5px rgba(500, 203, 204, .5);
+}
+
+//文章页卡片
+.post-block, #posts > article + article .post-block {
+  margin-top: $site-top-margin;
+  margin-left: 3px; 
+  border-radius: $site-card-radius;
+//  -webkit-box-shadow: 0 0 14px #cacbcb;
+//  -moz-box-shadow: 0 0 14px #cacbcb;
+//  box-shadow: 0 0 14px #cacbcb;
+//  background: #fff;
+  
+  @media (max-width: 767px) {
+    padding: 25px 0 15px !important;
+    margin: 0 15px 20px;
+  }
+}
